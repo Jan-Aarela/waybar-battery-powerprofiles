@@ -1,4 +1,4 @@
-**Example waybar.css setup**
+**Example waybar.jsonc setup**
 
 ```
 ...
