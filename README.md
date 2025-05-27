@@ -1,4 +1,4 @@
-**Example waybar.css**
+**Example waybar.css setup**
 
 ```
 ...
