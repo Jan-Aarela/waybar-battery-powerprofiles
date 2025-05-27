@@ -21,6 +21,7 @@ sleep 0.25
 BATTERY=$(upower -e | grep 'BAT')
 PERCENT=$(upower -i "$BATTERY" | awk '/percentage/ {print $2}' | tr -d '%')
 STATE=$(upower -i "$BATTERY" | awk '/state/ {print $2}' | tr -d '%')
+RATE=$(upower -i "$BATTERY" | awk '/energy-rate/ {print $2}' | tr -d '%')
 PROFILE=$(powerprofilesctl get)
 
 
@@ -45,5 +46,12 @@ else
     CLASS=$""
 fi
 
+# Set energy rate polarity.
+if [[ $STATE == "charging" ]];then
+    TOOLTIP="+$RATE"
+else
+    TOOLTIP=$"-$RATE"
+fi
+
 # Export as json.
-printf '{"text": "%s", "class": "%s"}\n' "$PROFILE $PERCENT" "$CLASS"
+printf '{"text": "%s", "class": "%s", "alt": "%s"}\n' "$PROFILE $PERCENT" "$CLASS" "$TOOLTIP"
