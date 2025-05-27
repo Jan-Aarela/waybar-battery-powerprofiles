@@ -14,3 +14,5 @@
     },
 ...
 ```
+
+Use classes .warning, .critical and .charging for css styling.
