@@ -1,4 +1,4 @@
-**Example waybar.jsonc setup**
+## Example waybar.jsonc setup
 
 ```
 ...
@@ -15,4 +15,4 @@
 ...
 ```
 
-Use classes .warning, .critical and .charging for css styling.
+**Use classes .warning, .critical and .charging for css styling.**
