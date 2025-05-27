@@ -9,6 +9,8 @@
       "exec-on-event": true,
       "format": "{text}%",
       "on-click": "~/.config/hypr/themes/Mocha/bat-pp.sh toggle"
+      "tooltip": "true",
+      "tooltip-format": "{alt}W"
     },
 ...
 ```
