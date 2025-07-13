@@ -1,7 +1,6 @@
 ## Example waybar.jsonc setup
 
-```
-...
+``` json
     "custom/battery": {
       "interval": 10,
       "return-type": "json",
@@ -12,7 +11,6 @@
       "tooltip": "true",
       "tooltip-format": "{alt}W"
     },
-...
 ```
 
 **Use classes .warning, .critical and .charging for css styling.**
