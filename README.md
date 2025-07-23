@@ -1,16 +1,14 @@
 ## Example waybar.jsonc setup
 
 ``` json
-    "custom/battery": {
-      "interval": 10,
+    "custom/nvidia": {
+      "interval": 4,
       "return-type": "json",
-      "exec": "~/.config/hypr/themes/Mocha/bat-pp.sh",
-      "exec-on-event": true,
-      "format": "{text}%",
-      "on-click": "~/.config/hypr/themes/Mocha/bat-pp.sh toggle"
+      "exec": "~/.config/hypr/themes/Mocha/nvidia.sh",
+      "format": "<span size='x-large' rise='-2500'>󰢮</span>{text}",
       "tooltip": "true",
-      "tooltip-format": "{alt}W"
+      "tooltip-format": "{alt}"
     },
 ```
 
-**Use classes .warning, .critical and .charging for css styling.**
+**Use class .critical for styling**
