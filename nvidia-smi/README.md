@@ -1,3 +1,7 @@
+## Module preview
+
+![alt_text](https://raw.githubusercontent.com/Jan-Aarela/waybar-custom-modules/refs/heads/main/nvidia-smi/2025-07-24-011514_region.png)
+
 ## Example waybar.jsonc setup
 
 ``` json
